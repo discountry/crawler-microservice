@@ -2,11 +2,9 @@ const rp = require('request-promise')
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res) => res.send('Hello World!'))
-
 app.all('/site', function (req, res) {
     console.log(req.method)
-    let url = ''
+    var url = ''
     if (req.method === 'GET') {
         url = req.query.url
     } else {
