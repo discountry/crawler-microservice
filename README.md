@@ -3,6 +3,8 @@
 ## Install
 
 ```bash
+git clone https://github.com/discountry/crawler-microservice.git
+cd crawler-microservice
 npm install
 npm start
 ```
