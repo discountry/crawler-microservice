@@ -21,7 +21,7 @@ params: `url : https://www.google.com`
 
 /site
 
-### Emulate real browser to scrape rendered content
+### Emulate real browser to crawl rendered content
 
 **Set Chromium location in `browser.js`**
 
