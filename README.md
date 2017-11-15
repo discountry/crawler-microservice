@@ -21,6 +21,25 @@ params: `url : https://www.google.com`
 
 /site
 
+### Emulate real browser to scrape rendered content
+
+**Set Chromium location in `browser.js`**
+
+```js
+...
+const browser = await puppeteer.launch({
+    // change to your local Chromium location
+    executablePath: '/Applications/Chromium.app/Contents/MacOS/Chromium',
+});
+...
+```
+
+Then run this command.
+
+```bash
+npm run browser
+```
+
 ## Requirements
 
 node > 8.0
